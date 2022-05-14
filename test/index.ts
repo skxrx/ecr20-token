@@ -107,9 +107,4 @@ describe('SkxToken', function () {
       'not enough token!'
     )
   })
-
-  it('Change an owner', async function () {
-    await newToken.changeOwner(addr2.address)
-    expect(await newToken.owner()).to.equal(addr2.address)
-  })
 })
